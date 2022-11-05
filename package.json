@@ -1,8 +1,11 @@
 {
   "name": "dj-react-portfolio",
+  "homepage": "https://Dakota32Jones.github.io/Dakota-React-Portfolio",
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -11,8 +14,12 @@
   "dependencies": {
     "eslint": "8.26.0",
     "eslint-config-next": "13.0.2",
+    "gh-pages": "^4.0.0",
     "next": "13.0.2",
     "react": "18.2.0",
     "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.2.2"
   }
 }
